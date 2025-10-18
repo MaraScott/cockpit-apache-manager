@@ -1,3 +1,17 @@
+Read ../REAME.md for first install
+if make fail try 
+```
+sed -i 's/--no-write-fetch-head//g' Makefile
+make
+```
+
+```
+# mkdir -p /usr/share/cockpit
+ln -s `pwd`/dist /usr/share/cockpit/
+```
+
+```
+sudo makdir -p /usr/local/libexec;
 sudo tee /usr/local/libexec/cockpit-apache-helper >/dev/null <<'BASH'
 #!/usr/bin/env bash
 set -euo pipefail
@@ -68,7 +82,8 @@ esac
 BASH
 
 sudo chmod 0755 /usr/local/libexec/cockpit-apache-helper
-
+```
+```
 sudo tee /usr/share/polkit-1/actions/org.marasit.apachehelper.policy >/dev/null <<'BASH'
 <?xml version="1.0" encoding="UTF-8"?>
 <policyconfig>
@@ -84,3 +99,4 @@ sudo tee /usr/share/polkit-1/actions/org.marasit.apachehelper.policy >/dev/null 
   </action>
 </policyconfig>
 BASH
+```
