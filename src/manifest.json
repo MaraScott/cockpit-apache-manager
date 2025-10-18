@@ -1,11 +1,8 @@
 {
-    "requires": {
-        "cockpit": "137"
-    },
-
-    "tools": {
-        "index": {
-            "label": "Starter Kit"
-        }
+  "requires": { "cockpit": "137" },
+  "tools": {
+    "index": {
+      "label": "Apache Manager"
     }
+  }
 }
