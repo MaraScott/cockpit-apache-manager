@@ -141,7 +141,6 @@ export default function App() {
     return (
 
         <Card>
-            {/* <CardTitle>Apache Manager</CardTitle> */}
             <CardTitle
                 style={{
                     display: "flex",
